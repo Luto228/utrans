@@ -10,22 +10,24 @@ utrans is a simple Python-based CLI tool for Ubuntu that instantly opens Google 
 
 1. Make sure you have Python 3 installed.
 2. Clone the repository or download the files.
-3. Run `python3 main.py <word or "sentence">`
+3. Run `python3 main.py <word or sentence>`
 
-> [!WARNING]
-> **Space bug**
-> For now, if you want to translate individual words, it's all good. However, if you are translating a sentence, THEN it is MANDATORY to enclose it in quotes, it will be fix.
+> [!NOTE]
+> **Update is ready!**
+> Now you can write sentences without quotes! The space handling has been fixed.
 
 ## Usage
 
 - To translate a word: `trans word`
-- To translate a sentence: `trans "Your sentence here"`
-- To translate to a specific language, use: `trans <word or "sentence"> <language>` (where language is the first 2 letters as used in Google Translate, e.g., 'es' for Spanish, 'fr' for French)
+- To translate a sentence: `trans Your sentence here`
+- To translate to a specific language, use: `trans <text> <language_code>` 
+  - Where `language_code` is the 2-letter language code as used by Google Translate (e.g., 'es' for Spanish, 'fr' for French, 'ru' for Russian)
 
 ## Examples
 
 - `trans hello`
-- `trans "Hello, how are you?"`
+- `trans Hello how are you?`
+- `trans Hello how are you? es` (translates to Spanish)
 
 ---
 *Built with ❤️ and code*
